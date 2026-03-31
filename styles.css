@@ -1,0 +1,173 @@
+
+#webLinks{
+padding:25px;
+width:60%;
+margin:15px Auto;
+text-align:center;
+background-color:white;
+border:solid 4px;
+border-radius:4px;
+}
+.link{
+font-size:1rem;
+margin:20px;
+text-transform:capitalize;
+text-decoration:none;
+color:black;
+
+}
+.link:hover{
+    border:solid 4px blue;
+    border-radius: 4px;
+    color:white;
+    background-color: blue;
+
+}
+.link:hover span{
+    color:red;
+}
+
+
+span#readMore:hover{
+color:red;
+}
+
+#readMore{
+    text-transform:uppercase;
+}
+
+
+h1{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight:bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding:20px 0;
+}
+
+h2{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding:20px 0;
+}
+
+h3{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding:20px 0;
+}
+
+#h2Page1 span{
+    color:white;
+}
+body{
+    background-image:url(https://existentialcafe.blog/wp-content/uploads/2020/05/success.jpg?w=1140&h=855);
+    background-size:cover;
+
+}
+#bodyp2{
+background-image:url(images/success.edited.jpg);
+}
+#myStory{
+    margin:0 20px;
+    padding: 20px;
+    border-radius:solid 10px;
+}
+
+.p:hover{
+background-color:white;
+}
+
+.p{
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-left: 20px;
+    text-align: left;
+    text-transform: capitalize;
+
+}
+
+/* //https://wallpapers.com/images/high/water-background-ye0s8kgan03ggvpg.webp
+
+https://img-cdn.inc.com/image/upload/f_webp,c_fit,w_828,q_auto/images/panoramic/getty_495142964_198701.jpg */
+
+.parent{
+display:flex ;
+justify-content: space-evenly; /* or space-between */
+gap: 20px;
+align-items:flex-start;
+}
+
+.son{
+    width:50%;
+    border:solid 4px black;
+    border-radius:4px;
+    margin:0 15px;
+    padding:15px;
+    text-align:center;
+}
+
+.son2{
+  width:50%;
+  border:solid 4px black;
+  border-radius:4px;
+  margin:25px auto;
+  padding:15px;
+  text-align:center;
+}
+
+dt{
+    color:white;
+}
+
+dd::before{
+    content:"•";
+    font-weight:bold;
+    font-size: 1.2rem;
+    margin:0.7rem;
+}
+
+dd{
+    display:none;
+}
+dt span{
+    display:block;
+    color:black;
+    text-align:center;
+    text-transform: uppercase;
+}
+
+
+
+
+.upcoming{
+width: 70%;
+border:white 4px solid;
+margin:10% auto;
+padding:20px;
+}
+
+.messege{
+    color:red;
+    font-size:2rem;
+    text-transform: capitalize;
+}
+
+.working{
+    color:black;
+    font-size:1.5rem;
+    text-align:center;
+}
+
+
+
+

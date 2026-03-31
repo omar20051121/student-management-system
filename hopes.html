@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <title>hopies / interests</title>
+        <script>
+            document.addEventListener('DOMContentLoaded',function(){
+                let dtId=[];
+                let dt=[];
+                let dtN=6;
+                let readState=[];
+
+                let dd1=[];
+                let dd2=[];
+                for(let i =1,j =1; i<=dtN;i++ ){
+                    if(i<=3){
+                    dtId[i]='r'+i;
+                    dd1[i]=('dd'+1)+('_r'+i);
+                    dd2[i]=('dd'+2)+('_r'+i);
+
+                    dt[i]=document.querySelector(`#${dtId[i]}`);
+                    readState[i]=document.querySelector(`#${dtId[i]} span`);
+
+                    dd1[i]=document.querySelector(`#${dd1[i]}`);
+                    dd2[i]=document.querySelector(`#${dd2[i]}`);
+                    }
+
+                    else{
+                    dtId[i]='ur'+ j ;
+                    dd1[i]=('dd'+1)+('_ur'+j);
+                    dd2[i]=('dd'+2)+('_ur'+j);
+
+                    dt[i]=document.querySelector(`#${dtId[i]}`);
+                    readState[i]=document.querySelector(`#${dtId[i]} span`);
+
+                    dd1[i]=document.querySelector(`#${dd1[i]}`);
+                    dd2[i]=document.querySelector(`#${dd2[i]}`);
+                    j++;
+                    }
+
+                }
+
+              for(let i=1,j=1; i<=dtN; i++){
+                dt[i].addEventListener('click',function () {
+                    if (readState[i].textContent=='show'){
+
+                        dd1[i].style.display='block';
+                        dd2[i].style.display='block';
+
+                        readState[i].textContent='hide';
+
+                    }
+                    else{
+                        dd1[i].style.display='none';
+                        dd2[i].style.display='none';
+
+                        readState[i].textContent='show';
+
+                    }
+
+                });
+              }
+
+});
+
+        </script>
+
+    </head>
+    <body id='bodyp2'>
+       <div id='webLinks'>
+        <a class='link' href='index.html'>homepage</a>
+        <a class='link' href='hopes.html'>hopies / intirests</a>
+        <a class='link' href='experience.html'>projects / learning journey</a>
+        <a class='link'>contact / futur goals</a>
+        </div>
+        <h1>interests & hopies</h1>
+
+
+<h3 class='h2Page2'> related-teck interests
+    <img src='images/computerLogoH3.png' alt='computer logo'>
+</h3>
+<dl>
+ <div class='parent'>
+      <div class='son' >
+         <dt id='r1'>consistent-wep programming learning
+         <img src='images/wepLearning (icon).png' alt='Wep Icon'>
+         <span>show</span>
+        </dt>
+
+         <dd id='dd1_r1'> I have developed a consistent habit of enrolling in an online web programming course every three months to continuously enhance my technical skills.</dd>
+         <dd id='dd2_r1'> Throughout each course, I complete at least three meaningful projects—two during the course and a final project at its conclusion—to effectively apply and reinforce the concepts I have learned.</dd>
+
+      </div>
+
+      <div class='son' >
+        <dt id='r2'>Improving my problem-solving skills
+        <img src='images/problemSolving_icon.png' alt='problem solving icon'>
+        <span>show</span>
+        </dt>
+
+        <dd id='dd1_r2'>I solve at least ten new coding problems every week to prepare for participating in global programming contests such as ICPC and Google Code Jam.</dd>
+        <dd id='dd2_r2'>I study and compare different algorithms in terms of efficiency and reliability to determine which approaches are more effective and understand the reasons behind their performance differences.</dd>
+
+      </div>
+ </div>
+
+      <div class='son2' >
+        <dt id='r3'>Being ready and up-to-date with the global job market
+        <img src='images/gloabalMarket_Icon.png' alt='market icon'>
+        <span>show</span>
+        </dt>
+
+        <dd id='dd1_r3'>I follow tech influencers on social media to stay informed about the latest best practices and consistent changes in the field, especially in AI.</dd>
+        <dd id='dd2_r3'>I monitor programming job requirements on LinkedIn and follow reliable senior developers to understand industry expectations and trends.</dd>
+      </div>
+
+
+<h3 class='h2Page2'> unrelated-teck interests </h3>
+ <div class='parent'>
+      <div class='son'>
+        <dt id='ur1'>Practicing sports & maintaining health
+        <img scr='' alt=''>
+        <span>show</span></dt>
+        <dd id='dd1_ur1'>I regularly attend the gym three times per week to enhance my overall physical performance.</dd>
+        <dd id='dd2_ur1'>I maintain a balanced diet and prioritize proper nutrition, guided by the principle that a healthy body supports a sharp and focused mind.</dd>
+      </div>
+
+      <div class='son'>
+        <dt id="ur2">Boosting my mental skills
+        <img scr='' alt=''>
+        <span>show</span>
+        </dt>
+
+        <dd id='dd1_ur2'>I read one helpful book in a different field every month. Books that have positively influenced me include <i>7 Habits of Highly Effective People</i> and <i>Deep Work</i>.</dd>
+
+        <dd id='dd2_ur2'>I play chess weekly in my free time to sharpen strategic thinking and problem-solving skills.</dd>
+    </div>
+ </div>
+
+
+    <div class='son2'>
+        <dt id="ur3">Community involvement & teamwork
+        <img scr='' alt=''>
+        <span>show</span>
+        </dt>
+        <dd id='dd1_ur3'>I actively teach my younger brother English and assist my sister with her mathematics studies.</dd>
+
+        <dd id='dd2_ur3'>I focus on building meaningful relationships with fellow programming students and sharing knowledge with one another.</dd>
+     </div>
+
+</dl>
+    </body>
+</html>
+

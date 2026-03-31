@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <title>My Webpage</title>
+        <script>
+            document.addEventListener('DOMContentLoaded',function(){
+
+            let readMore=document.querySelector('#readMore');
+
+            readMore.addEventListener('click',function (){
+
+             let p1= document.querySelector('#p1');
+             let p2=  document.querySelector('#p2');
+             let p3=  document.querySelector('#p3');
+             if(p1.textContent==''){
+              readMore.textContent='read less';
+             p1.textContent=`During secondary school, I focused on two main goals: studying with dedication and curiosity,
+                and exploring different fields during summer vacations to understand their nature and potential career paths.
+                This exploration helped me gradually identify the field that best matches my way of thinking.
+                When choosing between Engineering and Computer Science,
+                I was drawn to Computer Science because of its ability to create practical solutions that transform daily life.
+                To strengthen this choice, I enrolled in Harvard’s CS50 course,
+                where I gained deeper insight into programming and how human logic can be translated into machine language,
+                further fueling my passion for this field.`;
+
+
+              p2.textContent=`My mindset and personal growth have been central to my journey. During my third year of secondary school,
+                I faced significant challenges in mathematics, which taught me that difficulty is part of growth.
+                By improving focus, discipline, and study strategies inspired by books like The 7 Habits of Highly Effective People and Deep Work,
+                I achieved 86% in my final year. I developed the habit of making consistent small improvements,
+                which strengthened both my academic performance and resilience.`;
+
+
+             p3.textContent=`Looking ahead, I see graduation as the beginning of continuous learning.
+                My goal is to become a professional developer who creates meaningful solutions and contributes positively to society.
+                This scholarship would remove financial barriers and allow me to focus fully on my studies, projects, and personal growth.
+                I am determined, disciplined, and ready to turn knowledge into real impact in the field of Computer Science.`;
+             }
+             else{
+               readMore.textContent='read more';
+               p1.textContent='';
+
+               p2.textContent='';
+
+               p3.textContent='';
+             }
+
+
+            });
+
+            });
+        </script>
+    </head>
+    <body>
+       <div id='webLinks'>
+        <a class='link'>homepage</a>
+        <a class='link' href='hopes.html'>hopies / intirests</a>
+        <a class='link'>projects / learning journey</a>
+        <a class='link'>contact / futur goals</a>
+        </div>
+
+        <h1 id='h1Page1'>home page</h1>
+
+        <h2 id='h2Page1'><span>M</span>y stor<span>y</span></h2>
+        <div id='myStory'>
+          <p  class='p' id='pShowed'>I am a 20-year-old student with a lifelong passion for logical thinking, problem-solving, and mathematics.
+             Since childhood, I have spent my free time solving puzzles, playing chess, and exploring challenging games,
+             which naturally developed my love for mathematics. I even helped my younger sister with her math studies,
+             discovering early on the joy of sharing knowledge and explaining complex ideas...<span id='readMore'>read more</span></p>
+
+          <p class='p' id='p1'></p>
+
+          <p class='p' id='p2'></p>
+
+          <p class='p' id='p3'></p>
+
+        </div>
+
+    </body>
+</html>
